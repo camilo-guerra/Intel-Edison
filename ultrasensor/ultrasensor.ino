@@ -1,23 +1,23 @@
 
-#define PinTrig 7 //pin para el la lectura de la señal
-#define PinEcho 8 //pin para generar la señal
+#define PinTrig 7   //pin para generar la señal
+#define PinEcho 8  //pin para el la lectura de la señal
 
 void setup() {
   Serial.begin (9600);
-  pinMode(PinEcho, OUTPUT); 
-  pinMode(PinTrig, INPUT);
+  pinMode(PinTrig, OUTPUT); 
+  pinMode(PinEcho , INPUT);
 }
 
 void loop() {
    float duracion;
    float distancia;
-   digitalWrite(PinTrig, LOW);
+   digitalWrite(PinEcho, LOW);
    delayMicroseconds(2); //espera 2 microsegundos para seguir ejecutando el sketch
-   digitalWrite(PinEcho, HIGH);
+   digitalWrite(PinTrig, HIGH);
 
    delayMicroseconds(8); //espera 8 microsegundos para emular el los ciclos del sonic burst
-   digitalWrite(PinEcho, LOW);
-   duracion = pulseIn(PinTrig, HIGH); //PulseIn toma el tiempo que tarda entre pasar de LOW a HIGH o al contrario en un pin
+   digitalWrite(PinTrig, LOW);
+   duracion = pulseIn(PinEcho, HIGH); //PulseIn toma el tiempo que tarda entre pasar de LOW a HIGH o al contrario en un pin
    distancia = (duracion/2) / 58; //formula para generar al distancia en centimetros
 
  //condicionales para establecer limites
