@@ -116,7 +116,7 @@ void loop() {
    delayMicroseconds(8); //espera 8 microsegundos para emular el los ciclos del sonic burst
    digitalWrite(PinTrig, LOW);
    duracion = pulseIn(PinEcho, HIGH); //PulseIn toma el tiempo que tarda entre pasar de LOW a HIGH o al contrario en un pin
-   distancia = (duracion/2) / 58; //formula para generar al distancia en centimetros
+   distancia = (duracion/2) / 29.1; //formula para generar al distancia en centimetros
 
  //condicionales para establecer limites
   if (distancia >= 300 || distancia <= 0){
