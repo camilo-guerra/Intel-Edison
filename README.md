@@ -15,7 +15,7 @@ Assembly Images:
 
 Serial Arduino Data:
 
-![alt text](screenshots/distancia wifi.png "Data")
+![alt text](screenshots/distanciawifi.png "Data")
 
 Ubidots Images: 
 
