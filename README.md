@@ -11,16 +11,16 @@ measurement function.
 3.ultrasonicUbidots folder contains the skethc to send the dintance get from the sensor to ubidots.
 
 Assembly Images:
-![alt tag](https://goo.gl/photos/7K9Ygu9jZm66viDh8)
+![alt text](screenshots/DSC_0231.JPG "assembly")
 
 Serial Arduino Data:
 
-![alt tag](https://goo.gl/photos/BMZqnKF1gfhZ8aSk7)
+![alt text](screenshots/distancia wifi.png "Data")
 
 Ubidots Images: 
 
-![alt tag](https://goo.gl/photos/9yHKq8YZdio4wTjh9)
+![alt text](screenshots/ubidots1.png "Description goes here")
 
 Data:
 
-![alt tag](https://goo.gl/photos/jYrePuUMiRCHVWtn7)
+![alt text](screenshots/ubidots2.png "Description goes here")
